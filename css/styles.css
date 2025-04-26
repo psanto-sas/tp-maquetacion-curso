@@ -5,7 +5,7 @@
   --fuente-tamaño-seccion: 1em;
   --fuente-tamaño-cuerpo: 0.8em;
   --fuente-cuerpo: "roboto", sans-serif;
-  --fuente-seccion: "Cal sans", sans-serif;
+  --fuente-seccion: "Cal Sans", sans-serif;
   --font-weight-cuerpo: 300;
   --font-weight-filtros: 500; 
 }
@@ -74,6 +74,40 @@ div.BarraBusqueda  img {
 #pngCarrito {
   height: 100%;
 }
+/* css del navbar */
+nav.linkSecciones {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+nav.linkSecciones > li {
+  float: top;
+}
+nav.linkSecciones li {
+  font-family: var(--fuente-seccion);
+  background-color: #000;
+  color: #fff;
+  padding: 10px 12px;
+  display: block;
+}
+
+nav.linkSecciones li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+nav.linkSecciones li a:hover {
+  background-color: #434343;
+}
+nav.linkSecciones li ul {
+  display: none;
+  position: absolute;
+  min-width: 50%;
+}
+
 
 main {
   display: flex;

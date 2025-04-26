@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML + CSS</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap"
-      rel="stylesheet"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Mandali&display=swap" 
+    rel="stylesheet"
     />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
+</head>
+<body>
     <header>
       <div class="logo">
         <a href="index.html"
@@ -39,44 +40,48 @@
         </div>
       <nav class="linkSecciones">
         <ul id="listaSecciones">
-          <li>Ofertas</li>
+          <li><a href="">Ofertas</a></li>
           <li>Componentes PC
-            <ul id="subListaSecciones">
-              <li>Procesadores</li>
-              <li>Placas de Video</li>
-              <li>Motherboards</li>
-              <li>Memorias Ram</li>
-              <li>Almacenamiento</li>
-              <li>Fuentes de Poder</li>
-              <li>Gabinetes</li>
-              <li>Disipadores</li>
+            <ul class="subListaDropdown">
+              <li><a href="">Procesadores</a></li>
+              <li><a href="">Placas de Video</a></li>
+              <li><a href="">Motherboards</a></li>
+              <li><a href="">Memorias Ram</a></li>
+              <li><a href="">Almacenamiento</a></li>
+              <li><a href="">Fuentes de Poder</a></li>
+              <li><a href="">Gabinetes</a></li>
+              <li><a href="">Disipadores</a></li>
             </ul>
           </li>
-          <li>PCs Armadas 
-            <ul id="subListaSecciones">
-              <li>PCs Intel</li>
-              <li>PCs AMD</li>
+          <li><a href="">PCs Armadas</a>
+            <ul class="subListaDropdown">
+              <li><a href="">PCs Intel</a></li>
+              <li><a href="">PCs AMD</a></li>
             </ul>
           </li>
           <li>Perifericos
-            <ul id="subListaSecciones">
-              <li>Teclados</li>
-              <li>Mouses</li>
-              <li>Pads</li>
-              <li>Auriculares</li>
-              <li>Microfonos</li>
-              <li>Camaras Web</li>
-              <li>Monitores</li>
+            <ul class="subListaDropdown">
+              <li><a href="">Teclados</a></li>
+              <li><a href="">Mouses</a></li>
+              <li><a href="">Pads</a></li>
+              <li><a href="">Auriculares</a></li>
+              <li><a href="">Microfonos</a></li>
+              <li><a href="">Camaras Web</a></li>
+              <li><a href="">Monitores</a></li>
             </ul>
           </li>
+          <li><a href="">Mi Cuenta</a>
+            <ul class="subListaDropdown">
+              <li><a href="">Iniciar Sesion</a></li>
+              <li><a href="">Historial de Compras</a></li>
+              <li><a href="">Favoritos</a></li>
+            </ul>
         </ul>
 
       </nav>
     </header>
     <main>
-      <p id="textoInicial">
-        Venta de componentes de computadoras y perifericos.
-      </p>
+      <p id="textoInicial">Venta de componentes de computadoras y perifericos.</p>
 
       <ul id="sidebarElementos">
         <li>Teclado</li>
@@ -86,6 +91,7 @@
         <li>Microfonos</li>
         <li>Parlantes</li>
       </ul>
+    </ul>
     </main>
     <br />
     <br />
@@ -101,5 +107,5 @@
 
       <h3 class="derecho" id="ss">Ayuda</h3>
     </footer>
-  </body>
+</body>
 </html>
