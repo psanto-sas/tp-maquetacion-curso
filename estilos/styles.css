@@ -142,7 +142,7 @@ nav.linkSecciones li ul {
 }
 
 /*Ocultar submenus deliberadamente*/
-.subListaDropdown {
+ul.subListaDropdown {
   display:none;
   position: absolute;
   top: 100%;
