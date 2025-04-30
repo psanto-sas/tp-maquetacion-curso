@@ -3,11 +3,12 @@
   --color-2: white;
   --color-3: grey;
   --fuente-tamaño-seccion: 1em;
+  --fuente-tamaño-titulos: 2vw;
   --fuente-tamaño-cuerpo: 0.8em;
   --fuente-cuerpo: "roboto", sans-serif;
   --fuente-seccion: "Cal Sans", sans-serif;
   --font-weight-cuerpo: 300;
-  --font-weight-filtros: 500; 
+  --font-weight-titulos: 500; 
 }
 
 
@@ -15,6 +16,8 @@ body {
   background: linear-gradient(60deg, #010e1c, #122a3e);
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
 }
 
 header {
@@ -194,10 +197,17 @@ main {
   #textoInicial {
     margin-top: 0.8rem;
     font-family: var(--fuente-cuerpo);
-    font-weight: var(--font-weight-cuerpo);
+    font-weight: 400;
     font-style:normal;
     color: var(--color-2);
     
+  }
+
+  h2.titulo {
+    font-family: var(--fuente-seccion);
+    font-weight: var(--font-weight-encabezados);
+    font-size: var(--fuente-tamaño-titulos);
+    color: var(--color-1);
   }
 
   #sidebarElementos {
@@ -219,14 +229,14 @@ main {
     font-size: 18px;
   }
   .contacto {
-    color: #fe4c14;
+    color: var(--color-1);
     font-family: "Kodchasan", sans-serif;
     align-items: start;
     margin-left: 100px;
   }
   
   .derecho {
-    color: #fe4c14;
+    color: var(--color-1);
     font-family: "Kodchasan", sans-serif;
     display: flex;
     margin-left: 1050px;
