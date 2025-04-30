@@ -181,13 +181,7 @@ nav.linkSecciones ul li:hover .subListaDropdown {
 
 /* termina CSS del navbar*/
 
-/*Css de imagenes de carousel*/
 
-.d-block w-100 {
-  width: 100%;
-  height: 100% !important;
-  object-fit: cover;
-}
 
 main {
   display: flex;
