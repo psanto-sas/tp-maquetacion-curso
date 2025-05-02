@@ -203,12 +203,19 @@ main {
     
   }
 
+div.separador {
+    margin-left: 42%;
+    margin-top: 20px;
+    width: 100%;
+  }
+
   h2.titulo {
     font-family: var(--fuente-seccion);
     font-weight: var(--font-weight-encabezados);
     font-size: var(--fuente-tamaño-titulos);
     color: var(--color-1);
-    margin: 20px 20px;
+    margin: 0;
+    
   }
 
 section.cardProductos {
