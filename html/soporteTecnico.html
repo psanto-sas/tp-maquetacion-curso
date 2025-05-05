@@ -99,20 +99,20 @@
 <h1 class="tituloFormSprt">Formulario de Soporte Tecnico</h1>
 <p class="introForm">Respondiendo el siguiente formulario, podremos solucionar su problema a la brevedad:</p>
 
-<form>
+<form id="formularioSoporte" >
 <div id="formulario">
 
   <div class="datosPersonales">
-    <label for="inputNombreCompletoSprt">Ingrese su nombre completo</label>
+    <label for="inputNombreCompletoSprt">Ingrese su nombre completo:</label>
     <input type="text" name="Nombre Completo" placeholder="Nombre Completo" id="inputNombreCompletoSprt" required>
   </div>
   <div class="datosPersonales">
-   <label for="inputTelefonoSprt">Ingrese un numero de telefono donde lo podamos contactar por WhatsApp </label>
-    <input type="text" name="Telefono" placeholder="Telefono" id="inputTelefonoSprt">
+   <label for="inputTelefonoSprt">Ingrese un numero de telefono donde lo podamos contactar por WhatsApp:</label>
+    <input type="text" name="Telefono" placeholder="Telefono" id="inputTelefonoSprt" autocomplete="off" required>
   </div>
   <div class="datosPersonales">
-    <label for="inputEmailSprt">Ingrese una direccion de email donde lo podamos contactar</label>
-    <input type="text" name="Email" placeholder="Email" class="inputEmailSprt"> 
+    <label for="inputEmailSprt">Ingrese una direccion de email donde lo podamos contactar:</label>
+    <input type="text" name="Email" placeholder="Email" id  ="inputEmailSprt" required autocomplete="off"> 
   </div>
     <div class="seleccionProblema">
       <label for="selectProblema">Seleccione el tipo de problema que tiene:</label>
@@ -127,36 +127,30 @@
        <!-- Campo de texto oculto al inicio -->
       <div id="otroInput" >
         <label for="otroTexto">Especificá:</label>
-        <input type="text" id="otroTexto" name="otroTexto">
+        <input type="text" id="otroTexto" name="otroTexto" required>
       </div>
 
-      <script> 
-        const select = document.getElementById("selectProblema");
-         const otroInput = document.getElementById("otroInput");
-  
-          select.addEventListener("change", function () {
-          if (select.value === "Otro") {
-            otroInput.style.display = "block";
-          } else {
-           otroInput.style.display = "none";
-          }
-              });
-      </script>
+      <script src="../js/formulario.js"></script> 
+     
     </div>
       <div class="explicacionProblema">
-        <label for="explicacionProblema">Expliquenos detalladamente su problema</label>
-        <textarea id="explicacionProblema" name="explicacionProblema" rows="10" cols="70"></textarea>
+        <label for="explicacionProblema">Expliquenos detalladamente su problema:</label>
+        <textarea id="explicacionProblema" name="explicacionProblema" rows="8" cols="70" placeholder="Escriba aqui"></textarea>
       </div>
       <div class="preferenciaContacto">
-        <label for="preferenciaContacto">¿Por cual medio prefiere que lo contactemos?</label>
+        <p class="textoPreferenciaContacto">¿Por cual medio prefiere que lo contactemos?</p>
         <div class="inputRadio">
-          <input type="radio" id="Telefono" name="preferencia" value="Telefono" checked/>
-          <label for="Telefono">Telefono</label>
+          <input type="radio" id="Telefono" name="preferencia" value="Telefono" checked autocomplete="off"/>
+          <label for="Telefono">WhatsApp</label>
         </div>
         <div class="inputRadio">
-          <input type="radio" id="Email" name="preferencia" value="Email" />
+          <input type="radio" id="Email" name="preferencia" value="Email" autocomplete="off" />
           <label for="Email">Email</label>
         </div>
+      </div>
+      <div class="botonSubmitReset">
+        <button type="submit" id="botonEnviar">Enviar</button>
+        <button type="reset" id="botonReset">Borrar Respuestas</button>
       </div>
 </div>
 
