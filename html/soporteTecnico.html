@@ -94,16 +94,26 @@
       </nav>
     </header>
     <main>
+
 <section class="formulario">
 <h1 class="tituloFormSprt">Formulario de Soporte Tecnico</h1>
-<p class="introForm">Respondiendo este formulario, podremos solucionar su problema a la brevedad.</p>
+<p class="introForm">Respondiendo el siguiente formulario, podremos solucionar su problema a la brevedad:</p>
 
 <form>
 <div id="formulario">
-  <input type="text" name="Nombre Completo" placeholder="Nombre Completo" class="inputNameSprt">
-  <input type="text" name="Telefono" placeholder="Telefono" class="inputTelSprt">
-  <input type="text" name="Email" placeholder="Email" class="inputEmailSprt"> 
 
+  <div class="datosPersonales">
+    <label for="inputNombreCompletoSprt">Ingrese su nombre completo</label>
+    <input type="text" name="Nombre Completo" placeholder="Nombre Completo" id="inputNombreCompletoSprt" required>
+  </div>
+  <div class="datosPersonales">
+   <label for="inputTelefonoSprt">Ingrese un numero de telefono donde lo podamos contactar por WhatsApp </label>
+    <input type="text" name="Telefono" placeholder="Telefono" id="inputTelefonoSprt">
+  </div>
+  <div class="datosPersonales">
+    <label for="inputEmailSprt">Ingrese una direccion de email donde lo podamos contactar</label>
+    <input type="text" name="Email" placeholder="Email" class="inputEmailSprt"> 
+  </div>
     <div class="seleccionProblema">
       <label for="selectProblema">Seleccione el tipo de problema que tiene:</label>
       <select id="selectProblema">
@@ -135,10 +145,10 @@
     </div>
       <div class="explicacionProblema">
         <label for="explicacionProblema">Expliquenos detalladamente su problema</label>
-        <textarea id="explicacionProblema" name="explicacionProblema" rows="10" cols="70">Explique el problema</textarea>
+        <textarea id="explicacionProblema" name="explicacionProblema" rows="10" cols="70"></textarea>
       </div>
       <div class="preferenciaContacto">
-        <label for="preferenciaContacto">Seleccione su preferencia de contacto:</label>
+        <label for="preferenciaContacto">¿Por cual medio prefiere que lo contactemos?</label>
         <div class="inputRadio">
           <input type="radio" id="Telefono" name="preferencia" value="Telefono" checked/>
           <label for="Telefono">Telefono</label>

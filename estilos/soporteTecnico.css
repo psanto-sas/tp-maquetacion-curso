@@ -1,4 +1,72 @@
-#otroInput{
+section.formulario{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+h1.tituloFormSprt {
+    font-family: var(--fuente-seccion);
+    font-weight: var(--font-weight-encabezados);
+    font-size: var(--fuente-tamaño-titulos);
+    color: var(--color-1);
+    
+}
+
+p.introForm {
+    font-family: var(--fuente-cuerpo);
+    font-weight: var(--font-weight-cuerpo);
+    font-size: var(--fuente-tamaño-cuerpo2);
+    color: var(--color-2);
+    
+}
+
+div.datosPersonales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: var(--color-2);
+    width: 100%;
+}
+
+div.datosPersonales > input {
+    width: 100%;
+    margin: 20px 0 20px 0;
+    
+
+}
+
+div.seleccionProblema {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: var(--color-2);
+
+
+}
+div#otroInput{
     display: none; 
     margin-top: 10px;
+    width: 100%;
+}
+
+div.explicacionProblema {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: var(--color-2);
+    width: 100%;
+}
+
+div.preferenciaContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: var(--color-2);
+    width: 100%;
 }
